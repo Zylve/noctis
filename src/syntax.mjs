@@ -651,6 +651,7 @@ export default [
       name: 'BOLD',
       scope: [
          'keyword',
+         'keyword.operator.arrow.cs',
          'keyword.control.directive.include.cpp',
          'entity.name.namespace.cpp',
          'entity.name.scope-resolution.namespace.alias.cpp',
