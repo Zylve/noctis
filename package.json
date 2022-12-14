@@ -2,7 +2,7 @@
    "name": "noctis-italicized",
    "displayName": "Noctis",
    "description": "A custom version of the Noctis theme with different italicization and boldface.",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "publisher": "Zylve",
    "icon": "images/logo.png",
    "engines": {

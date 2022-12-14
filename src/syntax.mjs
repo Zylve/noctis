@@ -537,10 +537,19 @@ export default [
       name: 'ITALIC',
       scope: [
          'comment',
+         'storage.type.js',
+         'storage.type.function.js',
+         'storage.type.class.js',
+         'meta.object-binding-pattern-variable.js',
+         'punctuation.definition.parameters.begin.js',
+         'punctuation.definition.parameters.end.js',
+         'meta.object.member.js',
          'entity.name.type.cs',
          'storage.modifier',
          'meta.template.call.cpp',
          'punctuation.separator.scope-resolution.template.call.cpp',
+         'storage.type.struct.declare.cpp',
+         
          'storage.type.class.cpp',
          'storage.type.struct.cpp',
          'storage.type.namespace.directive.cpp',
@@ -719,6 +728,7 @@ export default [
    {
       name: 'BOLD-ITALIC',
       scope: [
+         'variable.parameter.js',
          'markup.bold markup.italic',
          'markup.italic markup.bold',
          'markup.quote markup.bold',
@@ -812,4 +822,15 @@ export default [
          fontStyle: '',
       },
    },
+   // Work around for C-Structs
+   {
+      name: 'C-STRUCT',
+      scope: [
+         'entity.name.type.struct.cpp',
+      ],
+      settings: {
+         foreground: '#dd7956',
+         fontStyle: 'italic'
+      }
+   }
 ];
